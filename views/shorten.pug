@@ -1,0 +1,38 @@
+- let deleteUrl = `/deleteurl?shorturlid=${shortUrl}`
+doctype html
+html(lang='en')
+	head
+		title Shorten
+		script(src='script.js')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Fira+Mono')
+		link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Lato:400,700')
+		link(rel='stylesheet', href='main.css')
+	body
+		h1.shorten-heading Shorten
+		form.shorten-form(action='/api/shorten/', method='POST')
+			input.shortUrl(
+				type='text', 
+				name='shortUrl', 
+				placeholder='Short URL'
+			)
+			input.longUrl(
+				type='text', 
+				name='longUrl', 
+				placeholder='Long URL'
+			)
+			input.button.button-primary(type='submit')
+		h2.admin-heading Admin
+			table.links-table(
+				cellpadding='0', 
+				cellspacing='0', 
+				border='0'
+			)
+				tbody
+				each row in table
+					tr
+						td= row.shortUrl
+						td
+							a.longurl-link(href=row.longUrl, target='_blank') #{row.longUrl}
+						td
+							a.delete-link(href='')
+								.delete-link(onclick="deletelink('"+row.shortUrl+"')") delete

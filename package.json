@@ -1,0 +1,35 @@
+{
+  "name": "ion",
+  "version": "0.1.0",
+  "description": "A URL Shortner using Node, Express, Pug and MySQL",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.13.3",
+    "mysql": "^2.16.0",
+    "pug": "^2.0.3"
+  },
+  "engines": {
+    "node": "10.6.0",
+    "npm": "6.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/someshkar/ion"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express",
+    "urlshortener",
+    "mysql"
+  ],
+  "author": "Somesh Kar",
+  "contributors": [
+    "Somesh Kar <i@somesh.co> (http://somesh.co)"
+  ],
+  "license": "MIT"
+}

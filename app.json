@@ -1,0 +1,27 @@
+{
+  "name": "Ion",
+  "description": "A URL Shortner built using Node, Express, Pug and MySQL",
+  "repository": "https://github.com/someshkar/ion",
+  "image": "heroku/nodejs",
+  "keywords": [
+    "node",
+    "express",
+    "urlshortener",
+    "pug",
+    "mysql",
+    "ion"
+  ],
+  "env":{
+    "APEX_DOMAIN":{
+      "description": "The URL you want your base domain to redirect to.",
+      "value": "https://github.com/someshkar/ion"
+    },
+    "ADMIN_PASSWORD":{
+      "description": "The administration password for the shorten page.",
+      "value": "ion"
+    }
+  },
+  "addons":[
+    "jawsdb:kitefin"
+  ]
+}

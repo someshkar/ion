@@ -1,0 +1,52 @@
+.links-table {
+    padding-top: 10px;
+    font-family: 'Fira Mono', monospace;
+}
+
+tr {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+td {
+    padding-left: 10px;
+}
+
+.longurl-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.delete-link {
+    text-decoration: none;
+    color:#0000EE;
+} 
+
+.delete-link:visited {
+    color: #0000EE;
+}
+
+.shorten-heading {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.longUrl {
+    top: 5px;
+    position: relative;
+    display: block;
+}
+
+.shortUrl {
+    top: 10px;
+}
+
+.button {
+    position: relative;
+    top: 10px;
+}
