@@ -10,5 +10,11 @@ Clone this repository and run `npm install`. Set the values to the following env
  - `ADMIN_PASSWORD` - The administration password for the shorten page (defaults to `ion`)
  - `PORT` - The port you want Ion to listen on (defaults to `3000`)
 
+### Administration
+
+Go to `yourdomain/shorten?pass=YourAdminPassword` if you've deployed online, or to `localhost:3000/shorten?pass=YourAdminPassword` if you're just trying it out locally.
+
+**NOTE:** If no environment variable is set for `ADMIN_PASSWORD`, it will default to `ion`.
+
 ## Deploy
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/someshkar/ion)
