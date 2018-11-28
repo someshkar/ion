@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const mysql = require('mysql')
 const con = mysql.createConnection(process.env.ION_DB_URL || process.env.JAWSDB_URL)
 
-con.on('error', function(err) {
+con.on('error', (err) => {
   console.log("[mysql error]",err);
 });
 
